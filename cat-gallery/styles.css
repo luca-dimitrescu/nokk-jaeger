@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoMonospace';
+    src: url(RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Courier';
+    src: url(CourierPrime-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*WRC stands for "WHAT ARE CATS"*/
+.wrc {
+    text-align: center;
+}
+
+.container3 img {
+    max-width: 480px;
+    height: 35%;
+    margin-top: 60px;
+    border: 3px solid black;
+}
+
+.container3 figure {
+    margin-left: 80px;
+}
+
+
+.container4 h3 {
+    font-size: 2em;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+    margin-left: 34vw;
+    padding: 35px;
+    border: 3px solid #4db2ff;
+    margin-bottom: 120px;
+}
+
+.container4 p,
+span {
+    padding: 15px 10px;
+}
+
+.container3 h4 {
+    font-family: 'Courier';
+}
+
+.container3 span {
+    font-family: 'RobotoMonospace';
+}
+
+figure figcaption {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 15px;
+    margin-left: -9px;
+}
+
+.container3 {
+    display: flex;
+}
+
+.cats {
+    margin: 0 24vw;
+    text-align: justify;
+}
+
+.cats p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 80px;
+}
+
+.container3 figcaption a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(49, 49, 49);
+    padding: 10px;
+    border: 4px solid black;
+}
+
+.container3 img:hover {
+    cursor: pointer;
+}
+
+
+.header {
+    width: 99vw;
+    height: 100px;
+    margin-top: 5;
+    display: flex;
+    opacity: 1;
+    font-family: 'BebasNeue';
+    font-size: 1.2em;
+    border: 2px solid black;
+    background: linear-gradient(to bottom, #dfe8ed, #dce9f3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header>#nokk-container,
+#jaeger-container:hover,
+p {
+    cursor: pointer;
+}
+
+#nokk-container {
+    margin-top: 11px;
+    margin-left: 80px;
+}
+
+.header>p {
+    font-family: 'BebasNeue';
+    font-size: 1.4em;
+    margin-top: 31px;
+    margin-left: 10px;
+
+}
+
+
+.header-nav>ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-left: 42vw;
+}
+
+.header-nav>ul>li {
+    padding: 20px;
+    list-style-type: none;
+    transition: background-color 0.8s, border 0.8s, box-shadow 0.8s;
+}
+
+.header-nav>ul>li:hover {
+    background-color: rgb(144, 182, 243);
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 4px 4px black;
+    animation: buttonUp 0.4s ease-in-out forwards;
+}
+
+#nokk {
+    width: 100px;
+    height: 80px;
+    margin-right: 38px;
+}
+
+#jaeger {
+    margin-top: 13px;
+    margin-left: 30px;
+    width: 60px;
+    height: 80px;
+}
+
+@keyframes buttonUp {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+h1 {
+    font-size: 68px;
+    font-family: 'BebasNeue';
+}
+
+h2,
+h3 {
+    font-size: 35px;
+    font-family: 'RobotoMonospace';
+}
+
+
+p {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container1 {
+    background: rgba(255, 255, 255, 0.9) url('background-cat.jpg') no-repeat center center;
+    padding-top: 36px;
+    object-fit: cover;
+    width: 99vw;
+    height: 98vh;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+
+.container1>* {
+    position: relative;
+    z-index: 2;
+}
+
+.container1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ffffff);
+    z-index: 2;
+}
+
+.container2 article img {
+    max-width: 680px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.container2 article {
+    max-width: 680px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.intro {
+    font-size: 24px;
+    text-align: justify;
+}
+
+hr {
+    width: calc(100vw - 48vw);
+}
+
+.container2 img {
+    border: 2px solid black;
+}
